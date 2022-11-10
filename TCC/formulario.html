@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<body>
+
+  <div>
+     <h1>Cadastre-se para o nosso curso:</h1>
+     <p>Complete com suas informações:</p>
+     <br>
+  </div>
+
+  <form> 
+    <fieldset class="grupo">
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+      </div>
+
+        <div class="campo">
+          <label>Sobrenome:</label>
+          <input type="text" name="sobrenome" id="sobrenome">
+        </div>
+    </fieldset>
+
+     <fieldset>
+    <div class="campo"> 
+      <label>Email</label>
+      <input type="email" name="email" id="email">
+    </div> <br>
+
+    <div class="campo">
+      <label>Qual sua idade?</label>
+      <label>
+        <input type="radio" name="devweb" value="13-15" checked> 13-15 
+      </label>
+
+      <label>
+        <input type="radio" name="devweb" value="16-18"> 16-18
+      </label>
+
+      <label>
+        <input type="radio" name="devweb" value="18-20"> 18-20
+      </label>
+
+      <label>
+        <input type="radio" name="devweb" value="outra idade"> Outro 
+      </label>
+    </div> 
+
+    <div>
+      <label>Em qual região você reside?</label>
+      <select id="Em qual região você reside?"> 
+        <option>Leste</option>
+        <option>Norte</option>
+        <option>Sul</option>
+        <option>Oeste</option>
+        <option>Centro</option>,
+      </select>
+    </div>
+  </fieldset>
+
+<fieldset>
+    <div>
+      <label>Nós desenvolvemos o curso por 3 dias, 4horas por dia. Quais dias você disponibilizaria para o curso?</label><br><br>
+      <input type="checkbox" id="tecnologia1" name="tecnologia1" value="Segunda á quarta">
+      <label for="tecnologia1">Segunda á quarta</label>
+      <input type="checkbox" id="tecnologia2" name="tecnologia2" value="Quarta á sexta">
+      <label for="tecnologia2">Quarta á sexta</label>
+      <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Quinta á sábado">
+      <label for="tecnologia3">Quinta á sábado</label>
+    </div>
+</fieldset>
+
+<div>
+  <br>
+  <label>Você já teve algum tipo de contato com as tranças?</label>
+  <textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+</div>
+
+<button type="submit">Concluído</button>
+
+  </form>
+
+</body>
+</html>
